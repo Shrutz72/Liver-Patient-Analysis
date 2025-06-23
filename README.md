@@ -4,21 +4,33 @@
 Liver diseases averts the normal function of the liver. This disease is caused by an assortment of elements that harm the liver. Diagnosis of liver infection at the preliminary stage is important for better treatment. In today’s scenario devices like sensors are used for detection of infections. Accurate classification techniques are required for automatic identification of disease samples. This disease diagnosis is very costly and complicated. Therefore, the goal of this work is to evaluate the performance of different Machine Learning algorithms in order to reduce the high cost of liver disease diagnosis. Early prediction of liver disease using classification algorithms is an efficacious task that can help the doctors to diagnose the disease within a short duration of time. In this project we will analyse the parameters of various classification algorithms and compare their predictive accuracies so as to find out the best classifier for determining the liver disease. This project compares various classification algorithms such as Random Forest, Logistic Regression, KNN and ANN Algorithm with an aim to identify the best technique. Based on this study, Random Forest with the highest accuracy outperformed the other algorithms and can be further utilised in the prediction of liver disease and can be recommended to the user.
 
 🛠️ Tech Stack
+
 Backend:	Python, Flask
+
 Machine Learning:	Scikit-learn, Joblib
+
 Data Processing:	Pandas, NumPy
+
 Data Visualization:	Matplotlib, Seaborn
+
 Frontend:	HTML, CSS 
+
 Model Persistence:	Joblib (for saving models)
+
 Deployment:	Local (Flask dev server)
 
 Source/Dataset: [Indian Liver Patient Records](https://www.kaggle.com/uciml/indian-liver-patient-records)
 
 📂 Project Workflow
+
 1.Data Collection & Preprocessing
+
 2.Exploratory Data Analysis (EDA)
+
 3.Model Training & Evaluation
+
 4.Web Application Development
+
 5.Model Deployment
 
 🔧 How to Run?
