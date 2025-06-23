@@ -30,12 +30,16 @@ Source/Dataset: [Indian Liver Patient Records](https://www.kaggle.com/uciml/indi
 
 📸 Screenshots
 1. Homepage
+   
    ![image](https://github.com/user-attachments/assets/2169530d-b5ad-4f49-9766-d58eebc6f0a1)
-2. Form
+3. Form
+   
    ![image](https://github.com/user-attachments/assets/b2919f7b-561c-4232-b45a-9f18a4a0b49b)
-3. Risk
+5. Risk
+   
    ![image](https://github.com/user-attachments/assets/632db667-9178-40de-b8be-884c4c85a3c0)
-4. No Risk
+7. No Risk
+   
    ![image](https://github.com/user-attachments/assets/856bea1b-933d-4575-94a8-e31fa5eaa06c)
 
 
