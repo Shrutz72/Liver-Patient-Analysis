@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liver Disease Prediction - Input Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #2ecc71;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            color: #3498db;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Enter Your Medical Details</h2>
+        <form action="{{ url_for('predict') }}" method="POST">
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required step="0.1">
+            </div>
+            
+            <div class="form-group">
+                <label for="gender">Gender (1 for Male, 0 for Female):</label>
+                <input type="number" id="gender" name="gender" required min="0" max="1">
+            </div>
+            
+            <div class="form-group">
+                <label for="tb">Total Bilirubin (mg/dL):</label>
+                <input type="number" id="tb" name="tb" required step="0.01">
+            </div>
+            
+            <div class="form-group">
+                <label for="db">Direct Bilirubin (mg/dL):</label>
+                <input type="number" id="db" name="db" required step="0.01">
+            </div>
+            
+            <div class="form-group">
+                <label for="ap">Alkaline Phosphotase (IU/L):</label>
+                <input type="number" id="ap" name="ap" required step="0.1">
+            </div>
+            
+            <div class="form-group">
+                <label for="aa1">Alanine Aminotransferase (IU/L):</label>
+                <input type="number" id="aa1" name="aa1" required step="0.1">
+            </div>
+            
+            <div class="form-group">
+                <label for="aa2">Aspartate Aminotransferase (IU/L):</label>
+                <input type="number" id="aa2" name="aa2" required step="0.1">
+            </div>
+            
+            <div class="form-group">
+                <label for="tp">Total Proteins (g/dL):</label>
+                <input type="number" id="tp" name="tp" required step="0.1">
+            </div>
+            
+            <div class="form-group">
+                <label for="a">Albumin (g/dL):</label>
+                <input type="number" id="a" name="a" required step="0.1">
+            </div>
+            
+            <div class="form-group">
+                <label for="agr">Albumin and Globulin Ratio:</label>
+                <input type="number" id="agr" name="agr" required step="0.01">
+            </div>
+            
+            <button type="submit">Predict Liver Disease Risk</button>
+        </form>
+        <a href="/" class="back-link">Back to Home</a>
+    </div>
+</body>
+</html>

@@ -3,9 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Liver Disease Prediction</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #2980b9;
+        }
+        .features {
+            margin: 30px 0;
+        }
+        .feature {
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Liver Disease Prediction System</h1>
+        <p>This application helps predict the likelihood of liver disease based on medical parameters. Our advanced machine learning model analyzes your test results to provide early risk assessment.</p>
+        
+        <div class="features">
+            <h3>How it works:</h3>
+            <div class="feature">1. Click the "Start Prediction" button</div>
+            <div class="feature">2. Enter your medical test values</div>
+            <div class="feature">3. Get instant risk assessment</div>
+        </div>
+
+        <center>
+            <a href="/predict_form" class="btn">Start Prediction</a>
+        </center>
+
+        <div style="margin-top: 40px; font-size: 0.9em; color: #7f8c8d;">
+            <p><strong>Note:</strong> This tool is not a substitute for professional medical advice. Always consult with a healthcare provider.</p>
+        </div>
+    </div>
 </body>
 </html>

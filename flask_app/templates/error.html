@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Occurred</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .error-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            padding: 30px;
+            max-width: 500px;
+            text-align: center;
+            border-top: 4px solid #ffc107;
+        }
+        h1 {
+            color: #dc3545;
+            margin-bottom: 20px;
+        }
+        .error-message {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #17a2b8;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 5px;
+        }
+        .btn:hover {
+            background-color: #138496;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1>Oops! Something Went Wrong</h1>
+        <div class="error-message">
+            {{ error_message }}
+        </div>
+        <p>We encountered an error while processing your request. Please try again.</p>
+        <div>
+            <a href="/predict_form" class="btn">Try Again</a>
+            <a href="/" class="btn">Return Home</a>
+        </div>
+    </div>
+</body>
+</html>

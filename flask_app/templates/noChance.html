@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liver Disease Prediction Result</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8d7da;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .result-container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 30px;
+            max-width: 600px;
+            text-align: center;
+            border-left: 5px solid #dc3545;
+        }
+        h1 {
+            color: #dc3545;
+            margin-bottom: 20px;
+        }
+        .result-message {
+            font-size: 1.2em;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+        .recommendation {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #dc3545;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h1>Risk Detected</h1>
+        <div class="result-message">
+            {{ prediction }}
+        </div>
+        
+        <div class="recommendation">
+            <h3>Recommended Actions:</h3>
+            <ul>
+                <li>Consult a hepatologist or gastroenterologist immediately</li>
+                <li>Schedule additional liver function tests</li>
+                <li>Avoid alcohol and hepatotoxic medications</li>
+                <li>Maintain a liver-friendly diet</li>
+                <li>Monitor symptoms like jaundice or abdominal pain</li>
+            </ul>
+        </div>
+        
+        <p>This result is based on machine learning analysis and should be verified by a medical professional.</p>
+        <a href="/" class="btn">Return to Home</a>
+    </div>
+</body>
+</html>

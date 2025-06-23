@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liver Disease Prediction Result</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #d4edda;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .result-container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 30px;
+            max-width: 600px;
+            text-align: center;
+            border-left: 5px solid #28a745;
+        }
+        h1 {
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+        .result-message {
+            font-size: 1.2em;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+        .recommendation {
+            background-color: #e2f3f8;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h1>No Risk Detected</h1>
+        <div class="result-message">
+            {{ prediction }}
+        </div>
+        
+        <div class="recommendation">
+            <h3>Maintenance Tips:</h3>
+            <ul>
+                <li>Continue regular health checkups</li>
+                <li>Maintain a balanced diet with limited alcohol</li>
+                <li>Exercise regularly</li>
+                <li>Stay hydrated</li>
+                <li>Monitor liver health annually if over 40</li>
+            </ul>
+        </div>
+        
+        <p>Remember that regular screening is important as conditions can change over time.</p>
+        <a href="/" class="btn">Return to Home</a>
+    </div>
+</body>
+</html>
